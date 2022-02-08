@@ -33,3 +33,26 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.heading{
+  text-align: center;
+}
+
+.container{
+  max-width:1200px;
+  margin:0 auto;
+}
+
+.boxes{
+  display:flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.box{
+  width:4rem;
+  height:4rem;
+  border:1px solid black;
+}
