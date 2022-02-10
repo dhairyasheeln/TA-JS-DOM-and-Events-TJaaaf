@@ -1,10 +1,11 @@
-function generateRandomNumber(min,max)
-{
-    return Math.floor(Math.random()*(max - min) + min);
-}
+// function generateRandomNumber(min,max)
+// {
+//     return Math.floor(Math.random()*(max - min) + min);
+// }
 
-function handler(e){
-    e.target.innerText=generateRandomNumber(1,13);
+function handler(e,i){
+    // e.target.innerText=generateRandomNumber(1,13);
+    e.target.innerText=i+1
     setTimeout(function setBlank(){
         e.target.innerText=" ";
     },5000);
@@ -18,10 +19,10 @@ let boxesOne=boxOne.querySelectorAll('li');
 
 /*multiple event listeners*/
 
-boxesOne.forEach(function(box){
+boxesOne.forEach(function(box,index){
     box.addEventListener('click',function(event)
     {
-        handler(event);
+        handler(event,index);
     });
 });
 
@@ -29,9 +30,20 @@ boxesOne.forEach(function(box){
 let boxTwo=root.children[1];
 let boxesTwo=boxTwo.querySelectorAll('li');
 
+boxesTwo.forEach((box,index)=>{
+    box.setAttribute('data-sr',`${index+1}`);
+});
+
+console.log(boxesTwo);
+
 /* event delegation*/
 boxTwo.addEventListener('click',function(event){
-    handler(event);
+    let text=event.target.dataset.sr;
+    event.target.innerText=text;
+
+    setTimeout(()=>{
+        event.target.innerText="";
+    },5000);
 });
 
 
