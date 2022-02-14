@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper and Scissors</title>
+    
+    <!--CSS Stylesheet-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--Font Links-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!--Icons-->
+    <script src="https://kit.fontawesome.com/70c45dc1b9.js" crossorigin="anonymous"></script>
+    
+  </head>
+  <body>
+    
+    <main class="main flex">
+      <div class="game-box">
+        <h1 class="heading">
+          Rock Paper Scissors
+        </h1>
+
+        <div class="container">
+          <div class="you">
+            <h2 class="you-score">
+              You  - 0
+            </h2>
+            <i class="btn data-UR fa fa-hand-rock-o" data-code="UR" aria-hidden="true"></i>
+            <i class="btn fa fa-hand-paper-o" data-code="UP" aria-hidden="true"></i>
+            <i class="btn data-US fa fa-hand-scissors-o" data-code="US" aria-hidden="true"></i>
+          </div>
+  
+          <div class="computer">
+            <h2 class="comp-score">
+              Computer - 0
+            </h2>
+            <i class="btn-comp fa data-CR fa-hand-rock-o" data-code="CR" aria-hidden="true"></i>
+            <i class="btn-comp fa data-CP fa-hand-paper-o" data-code="CP" aria-hidden="true"></i>
+            <i class="btn-comp fa data-CS fa-hand-scissors-o" data-code="CS" aria-hidden="true"></i>
+          </div>
+  
+          <button>Reset</button>
+          <h3 class="output"></h3>
+        </div>
+
+
+      </div>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
