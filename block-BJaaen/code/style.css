@@ -1,0 +1,131 @@
+/*CSS Resets*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ */
+/* v1.0 | 20080212 */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/*Customizing Styles*/
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.main{
+    height: 100vh;
+}
+
+.flex{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.container{
+    max-width:400px;
+    margin:0 auto;
+    padding:100px 0;
+}
+
+.game-box{
+    display:inline-block;
+    width:30%;
+    box-shadow: 1px 2px 20px black;
+    border-radius:10px;
+    overflow:hidden;
+
+}
+
+.heading{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    color:white;
+    padding:32px;
+    background-color:#1E90FF;
+}
+
+.you,.computer{
+    margin-bottom: 40px;
+}
+.you-score,.comp-score{
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+i{
+    font-size: 44px;
+    margin-right: 30px;
+}
+
+.you i{
+    color:#1E90FF;
+}
+
+.computer i{
+    color:#EB2B34;
+}
+
+.fa-0{
+    color: black;
+}
+
+
+.output{
+    font-size: 32px;
+    text-align: center;
+}
